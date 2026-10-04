@@ -1,0 +1,14 @@
+[project]
+name = "van-emde-boas-tree"
+version = "0.1.0"
+description = "Maintains an ordered set of bounded integer keys with double-logarithmic operations."
+requires-python = ">=3.10"
+dependencies = []
+readme = "README.md"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
