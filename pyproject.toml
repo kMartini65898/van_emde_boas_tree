@@ -1,6 +1,6 @@
 [project]
 name = "van-emde-boas-tree"
-version = "0.1.1"
+version = "0.1.2"
 description = "Maintains an ordered set of bounded integer keys with double-logarithmic operations."
 requires-python = ">=3.10"
 dependencies = []
