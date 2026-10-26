@@ -40,3 +40,10 @@ you genuinely need 0/1 as keys, pass them as plain ints.
 searching, so `find_next(u)` returns the same as `find_next(u-1)` and
 `find_prev(-1)` returns the same as `find_prev(0)`. This matches the vEB
 "nil-or-result" convention rather than raising on a query just past the end.
+
+## Design notes
+
+The window stores values eagerly rather than keeping running aggregates. Running
+sums drift with floating point over long streams, and recomputing from a small
+buffer is cheap enough that the drift is not worth the speed.
+
